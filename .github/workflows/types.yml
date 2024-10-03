@@ -12,3 +12,4 @@ jobs:
       - uses: grafana/plugin-actions/bundle-types@jackw/types-bundler-action
         with:
           entryPoint: ${{ github.workspace }}/src/types/index.ts
+          tsConfig: ${{ github.workspace }}/tsconfig.json
