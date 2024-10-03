@@ -9,4 +9,7 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - uses: grafana/plugin-actions/bundle-types@jackw/types-bundler-action
+      # - uses: grafana/plugin-actions/bundle-types@jackw/types-bundler-action
+      - name: Bundle types
+        run: npx -y @grafana/plugin-types-bundler@latest
+        shell: bash
