@@ -1,11 +1,7 @@
-name: Release
+name: Types
 
 on:
   push:
-
-# necessary to create releases
-permissions:
-  contents: write
 
 jobs:
   release:
